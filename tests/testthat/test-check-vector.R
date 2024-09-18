@@ -5,8 +5,8 @@ test_that("check_vector errors if value undefined", {
 
 test_that("check_vector tests vector", {
   x <- 2
-  expect_error(check_vector(x, NULL), "x must be of class 'NULL'")
-  expect_identical(check_vector(NULL, NULL, min_length = 0), NULL)
+  expect_error(check_vector(x, NULL), "value must be a vector")
+  expect_error(check_vector(NULL, NULL, min_length = 0), "NULL must be a vector")
   expect_error(check_vector(list(x), 1), "list[(]x[)] must be a vector")
   expect_error(check_vector(1, list(x)), "value must be a vector")
 })

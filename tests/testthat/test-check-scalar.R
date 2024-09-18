@@ -5,7 +5,7 @@ test_that("check_scalar length 1 if value undefined", {
 
 test_that("check_scalar tests vector", {
   x <- 2
-  expect_error(check_scalar(x, NULL), "x must be of class 'NULL'")
+  expect_error(check_scalar(x, NULL), "value must be a vector")
   expect_error(check_scalar(list(x), 1), "list[(]x[)] must be a scalar")
   expect_error(check_scalar(1, list(x)), "value must be a vector")
 })
