@@ -18,4 +18,5 @@ Suggests:
     tibble,
     testthat,
     covr
-RoxygenNote: 7.1.1
+Encoding: UTF-8
+RoxygenNote: 7.3.2
